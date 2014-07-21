@@ -34,7 +34,7 @@ mongoose.connection.once('open', function() {
 	 
 	Greeting.find( function(err, greetings){    
 		if( !greetings ){      
-			greeting = new Greeting({ sentence: standardGreeting });  
+			greeting = new Greeting({sentence: standardGreeting});  
 			greeting.save(); 
 			}  
 	});  
